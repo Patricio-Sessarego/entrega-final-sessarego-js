@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GamingGear | Home</title>
+    <!-- LIBRERIA ANIMATE -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <!-- TOASTIFY -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <!-- ICONOS BOOTSTRAP -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <!-- CSS BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- HEADER -->
+    <header class="sticky-top">
+        <div class="navbar navbar-expand container-fluid headerContainer" id="headerContainer">
+            <div class="logoImg">
+                <img class="imgLogo" id="imgLogo" src="img/logo.png" alt="Logo">
+            </div>
+            <div class="navBarHeader">
+                <nav class="collapse navbar-collapse barraNav" id="barraNav">
+                    <ul class="navbar-nav listaHeader" id="listaHeader">
+                        <li class="nav-item navegacion">
+                            <a class="nav-link itemNav primerItem" href="./index.html">Home</a>
+                        </li>
+                        <li class="nav-item navegacion">
+                            <a class="nav-link itemNav" href="#">Ofertas</a>
+                        </li>
+                        <li class="nav-item navegacion">
+                            <a class="nav-link itemNav" href="#">Nosotros</a>
+                        </li>
+                        <li class="nav-item navegacion">
+                            <a class="nav-link itemNav" href="#">Sign In</a>
+                        </li>
+                        <li class="nav-item navegacion">
+                            <a class="nav-link itemNav" href="./html/log-in.html">Log In</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="searchBarContainer">
+                <form class="d-flex searchBar" id="searchBar" role="search">
+                    <input class="form-control me-2 border-0 searchTool" id="searchTool" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn border-0 btnSearchBar" id="btnSearchBar" type="submit"><i class="bi bi-search"></i></button>
+                </form>
+            </div>
+        </div>
+    </header>
+    <!-- MAIN -->
+    <main class="main" id="main">
+        <!-- CARROUSEL -->
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="img-fluid d-block w-100 imgCarrousel" src="./img/carrousel-1.jpg" alt="Imagen Carrousel">
+                </div>
+                <div class="carousel-item">
+                    <img class="img-fluid d-block w-100 imgCarrousel" src="./img/carrousel-2.jpg" alt="Imagen Carrousel">
+                </div>
+                <div class="carousel-item">
+                    <img class="img-fluid d-block w-100 imgCarrousel" src="./img/carrousel-3.jpg" alt="Imagen Carrousel">
+                </div>
+                <div class="carousel-item">
+                    <img class="img-fluid d-block w-100 imgCarrousel" src="./img/carrousel-4.jpg" alt="Imagen Carrousel">
+                </div>
+                <div class="carousel-item">
+                    <img class="img-fluid d-block w-100 imgCarrousel" src="./img/carrousel-5.png" alt="Imagen Carrousel">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <hr class="hrMain" id="hrMain">
+        <!-- PRODUCTOS -->
+        <div class="productos" id="productos">
+            <!-- CARGAMOS LOS PRODUCTOS DESDE JS -->
+
+        </div>
+        <div class="sticky d-none sideBar " id="sideBar">
+            <div class="precioTotalCarrito" id="precioTotalCarrito">
+                <p class="precioCarrito" id="precioCarrito">Carrito Vacio</p>
+            </div>
+            <div class="productosCarrito" id="productosCarrito">
+                <!-- LO CARGAMOS DESE JS -->
+                
+            </div>
+        </div>
+        <hr class="hrFooter" id="hrFooter">
+    </main>
+    <!-- FOOTER -->
+    <footer class="footer" id="footer">
+        <nav class="navFooter">
+            <ul class="listaFooter">
+                <div class="divListaFooter" id="divListaFooter">
+                    <li class="navegacionFooter">
+                        <a href="#" class="linkFooter primerItemFooter" id="linkFooterUno">Facebook</a>
+                    </li>
+                    <li class="navegacionFooter">
+                        <a href="#" class="linkFooter" id="linkFooterDos">Instagram</a>
+                    </li>
+                    <li class="navegacionFooter">
+                        <a href="#" class="linkFooter" id="linkFooterTres">Twitter</a>
+                    </li>
+                    <li class="navegacionFooter">
+                        <a href="#" class="linkFooter" id="linkFooterCuatro">TikTok</a>
+                    </li>
+                    <li class="navegacionFooter">
+                        <a href="#" class="linkFooter" id="linkFooterCinco">Soporte</a>
+                    </li>
+                </div>
+            </ul>
+            <button class="logoCarrito animate__animated animate__backInDown" id="logoCarrito"><i class="bi bi-bag-check-fill"></i></button>
+            <button class="btnMode" id="btnMode"><i class="bi bi-sun-fill"></i></button>
+        </nav>
+    </footer>
+    <!-- SWEET ALERT -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- TOASTIFY -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <!-- JS BOOTSTRAP -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <!-- JS SCRIPT -->
+    <script src="./js/script.js"></script>
+    <script src="./js/light-mode.js"></script>
+</body>
+</html>

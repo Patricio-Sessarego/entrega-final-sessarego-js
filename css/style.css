@@ -1,0 +1,1091 @@
+/* GLOBAL */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* HR'S */
+.hrMain {
+    box-shadow: 3px 3px 5px 1px whitesmoke, -3px -3px 5px 1px whitesmoke, 3px -3px 5px 1px whitesmoke, -3px 3px 5px 1px whitesmoke;
+    background-color: whitesmoke;
+    color: whitesmoke;
+    margin-bottom: 100px;
+    margin-top: 100px;
+    margin-right: 15%;
+    margin-left: 15%;
+}
+
+.hrFooter {
+    box-shadow: 3px 3px 5px 1px whitesmoke, -3px -3px 5px 1px whitesmoke, 3px -3px 5px 1px whitesmoke, -3px 3px 5px 1px whitesmoke;
+    background-color: whitesmoke;
+    color: whitesmoke;
+    margin-bottom: 0px;
+    margin-top: 100px;
+    margin-right: 15%;
+    margin-left: 15%;
+}
+
+/* HEADER */
+.logoImg {
+    grid-area: imgLogo;
+}
+
+.navBarHeader {
+    grid-area: navBarHeader;
+}
+
+.navBarHeaderCelular {
+    grid-area: navBarHeaderCelular;
+}
+
+.searchBarContainer {
+    grid-area: searchBar;
+}
+
+.searchTool {
+    border-radius: 20px;
+}
+
+.imgLogo {
+    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out; 
+    background-color: #222222;
+    width: 200px;
+    height: 150px;
+}
+
+.headerContainer {
+    box-shadow: 3px 3px 5px 0px whitesmoke;
+    background-color: #222222;
+    color: whitesmoke;
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-template-rows: 75px 75px;
+    grid-template-areas: 
+    "imgLogo navBarHeader"
+    "imgLogo searchBar";
+}
+
+.barraNav {
+    background-color: #222222;
+    justify-content: flex-end;
+    color: whitesmoke;
+    margin-bottom: 15px;
+    margin-right: 15px;
+}
+
+.itemNav {
+    font-size: 1rem;
+    color: whitesmoke;
+    text-transform: uppercase;
+    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out; 
+}
+
+.navegacion {
+    color: whitesmoke;
+    background-color: #222222;
+    border-left: 1px solid whitesmoke;
+    border-right: 1px solid whitesmoke;
+    transition: color 0.1s ease-in-out, transform 0.1s ease-in-out; 
+}
+
+.listaHeader:first-child {
+    border-left: 1px solid whitesmoke;
+}
+
+.listaHeader:last-child {
+    border-right: 1px solid whitesmoke;
+}
+
+.searchBarContainer {
+    margin: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.searchBar {
+    background-color: whitesmoke;
+    border-radius: 20px;
+    margin-bottom: 15px;
+    margin-right: 15px;
+    width: 395px;
+}
+
+.btnSearchBar {
+    background-color: whitesmoke;
+    border-radius: 20px;
+    margin: 0;
+}
+
+.itemNav:visited {
+    color: whitesmoke;
+}
+
+.itemNav:focus {
+    transform: scale(1.0);
+    color: whitesmoke;
+}
+
+.itemNav:hover {
+    transform: scale(1.1);
+    color: #FAEBD7;
+}
+
+.navegacion:hover {
+    border-right: 2px solid whitesmoke;
+    border-left: 2px solid whitesmoke;
+    transform: scale(1.1);
+}
+
+.imgLogo:hover {
+    transform: scale(1.1);
+}
+
+.searchBar:hover {
+    box-shadow: 
+    3px 3px 10px rgba(255, 255, 255, 0.5),
+    3px -3px 10px rgba(255, 255, 255, 0.5), 
+    -3px -3px 10px rgba(255, 255, 255, 0.5), 
+    -3px 3px 10px rgba(255, 255, 255, 0.5);
+}
+
+.searchTool:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.btnSearchBar:hover {
+    color: black;
+}
+
+/* FOOTER */
+footer {
+    background-color: black;
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.listaFooter {
+    padding: 0;
+}
+
+.divListaFooter {
+    background-color: black;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.linkFooter {
+    transition: color 0.2s ease-in-out, transform 0.2s ease-in-out;
+    border-right: 1px solid whitesmoke;
+    border-left: 1px solid whitesmoke;
+    background-color: black;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: inline-block;
+    color: whitesmoke;
+    padding-right: 10px;
+    padding-left: 10px;
+    font-size: 1.10rem; 
+}
+
+.divListaFooter:first-child {
+    border-left: 1px solid whitesmoke;
+}
+
+.divListaFooter:last-child {
+    border-right: 1px solid whitesmoke;
+}
+
+.logoWpp {
+    width: 75px;
+    height: 75px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+.linkFooter:hover {
+    border-right: 2px solid whitesmoke;
+    border-left: 2px solid whitesmoke;
+    transform: scale(1.1);
+    color: #FAEBD7;
+}
+
+/* INDEX.HTML */
+main {
+    background-color: black;
+}
+
+/* CARROUSEL */
+.carousel {
+    width: 100%;
+}
+
+.imgCarrousel {
+    width: 100%;
+    height: 400px;
+}
+
+.productos {
+    background-color: black;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 330px 330px 330px;
+    grid-template-rows: 480px 480px;
+    column-gap: 100px;
+    row-gap: 75px;
+    text-align: center;
+}
+
+.producto {
+    border: 3px solid #333;
+    background-color: #222222;
+    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out; 
+    box-shadow: 3px 3px 5px 0px whitesmoke, -3px -3px 5px 0px whitesmoke, 3px -3px 5px 0px whitesmoke, -3px 3px 5px 0px whitesmoke;
+}
+
+.productos .producto:nth-child(2) img {
+    margin-top: 50px;
+    margin-bottom: 77px;
+}
+
+.productos .producto:nth-child(4) img {
+    margin-top: 70px;
+    margin-bottom: 74px;
+}
+
+.productos .producto:nth-child(6) img {
+    height: 324px;
+}
+
+.fotoProducto {
+    object-fit: contain;
+    width: 100%;
+}
+
+.nombreProducto {
+    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out; 
+    text-transform: uppercase;
+    color: whitesmoke;
+    font-size: 1.5rem;
+    margin: 5px;
+}
+
+.precioProducto {
+    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out; 
+    color: whitesmoke;
+    font-size: 1.25rem;
+    margin: 5px;
+}
+
+.btnContenedor {
+    display: flex;
+    justify-content: center;
+}
+
+.btnCarrito {
+    background-color: #333;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: whitesmoke;
+    border-radius: 10px;
+    padding: 0px 50px;
+    margin-right: 7.5px;
+    font-size: 30px;
+    border: none;
+}
+
+.btnComprar {
+    background-color: #333;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: whitesmoke;
+    border-radius: 10px;
+    padding: 0px 30px;
+    margin-left: 7.5px;
+    max-width: 130px;
+    border: none;
+}
+
+.btnLink {
+    color: whitesmoke;
+}
+
+.producto:hover {
+    transform: scale(1.1);
+    box-shadow: 
+    3px 3px 15px rgba(255, 255, 255, 0.5),
+    3px -3px 15px rgba(255, 255, 255, 0.5), 
+    -3px -3px 15px rgba(255, 255, 255, 0.5), 
+    -3px 3px 15px rgba(255, 255, 255, 0.5); 
+}
+
+.btnCarrito:hover {
+    box-shadow: 
+    3px 3px 10px rgba(255, 255, 255, 0.5),
+    3px -3px 10px rgba(255, 255, 255, 0.5), 
+    -3px -3px 10px rgba(255, 255, 255, 0.5), 
+    -3px 3px 10px rgba(255, 255, 255, 0.5);
+}
+
+.btnComprar:hover {
+    box-shadow: 
+    3px 3px 10px rgba(255, 255, 255, 0.5),
+    3px -3px 10px rgba(255, 255, 255, 0.5), 
+    -3px -3px 10px rgba(255, 255, 255, 0.5), 
+    -3px 3px 10px rgba(255, 255, 255, 0.5);
+}
+
+.nombreProducto:hover {
+    color: #FAEBD7;
+}
+
+.precioProducto:hover {
+    color: #FAEBD7;
+}
+
+/* CARRITO */
+.d-none {
+    display: none;
+}
+
+.logoCarrito {
+    background-color: black;
+    color: whitesmoke;
+    font-size: 75px;
+    position: fixed;
+    z-index: 10000;
+    bottom: 15px;
+    right: 20px;
+    border: none;
+}
+
+.carritoActivo {
+    background-color: #222222;
+    font-size: 25px;
+}
+
+
+.sideBar {
+    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+    box-shadow: -3px 3px 5px whitesmoke;
+    position: fixed;
+    right: 0px;
+    top: 168px;
+    height: 100%;
+    width: 500px;
+    background-color: #222222;
+    z-index: 10000;
+}
+
+.precioTotalCarrito {
+    font-size: 20px;
+    margin-top: 20px;
+    margin-left: 10px;
+    color: whitesmoke;
+    display: flex;
+    justify-content: center;
+}
+
+.precioCarrito {
+    padding: 10px;
+    color: whitesmoke;
+    text-transform: uppercase;
+    box-shadow: 3px 3px 5px 0px whitesmoke, -3px -3px 5px 0px whitesmoke, 3px -3px 5px 0px whitesmoke, -3px 3px 5px 0px whitesmoke;
+}
+
+.carritoContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: -3px 3px 5px whitesmoke, 3px -3px 5px whitesmoke;
+    margin-top: 20px;
+    height: 80px;
+}
+
+.nombreProductoCarrito {
+    font-size: 20px;
+    margin-top: 15px;
+    margin-left: 10px;
+    margin-right: 20px;
+    color: whitesmoke;
+    text-transform: uppercase;
+}
+
+.cantidadProductoCarrito {
+    position: fixed;
+    right: 120px;
+    font-size: 20px;
+    margin-top: 15px;
+    color: whitesmoke;
+}
+
+.btnSumar {
+    background-color: #222222;
+    color: whitesmoke;
+    font-size: 20px;
+    border: none;
+    position: fixed;
+    right: 150px;
+}
+
+.btnRestar {
+    background-color: #222222;
+    color: whitesmoke;
+    font-size: 20px;
+    position: fixed;
+    right: 75px;
+    border: none;
+}
+
+.btnEliminar {
+    background-color: #222222;
+    color: whitesmoke;
+    margin-right: 10px;
+    margin-left: 20px;
+    font-size: 20px;
+    border: none;
+}
+
+.carritoContainer:hover,
+.carritoContainer:hover .btnSumar,
+.carritoContainer:hover .btnRestar,
+.carritoContainer:hover .btnEliminar {
+    background-color: #333;
+}
+
+/* LOG IN.HTML */
+.logoWppForm {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 75px;
+    height: 75px;
+}
+.containerPadre {
+    width: 100%;
+    display: grid;
+    padding-top: 115px;
+    padding-bottom: 50px;
+    align-content: center;
+    justify-content: center;
+    background-color: black;
+}
+
+.container {
+    width: 800px;
+    height: 550px;
+    background-color: #1F1F1F;
+    border: 2px solid whitesmoke;
+    box-shadow: 2px 2px 50px 5px rgba(255, 255, 255, 0.5);
+}
+
+.form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.h2Form {
+    margin-top: 100px;
+    font-size: 2rem;
+    color: whitesmoke;
+    text-transform: uppercase;
+}
+
+.inp {
+    padding-bottom: 10px;
+    color: rgba(255, 255, 255, 0.5);
+    border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+}
+
+.input {
+    width: 260px;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    background: none;
+    margin-top: 40px;
+    color: whitesmoke;
+}
+
+.submit {
+    border: none;
+    width: 290px;
+    cursor: pointer;
+    color: #1F1F1F;
+    margin-top: 50px;
+    font-weight: bold;
+    padding: 10px 0px;
+    font-size: 1.25rem;
+    border-radius: 40px;
+    text-transform: uppercase;
+    background-color: whitesmoke;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+    box-shadow: 5px 5px 5px 1px rgba(255, 255, 255, 0.5), -5px -5px 5px 1px rgba(255, 255, 255, 0.5), 5px -5px 5px 1px rgba(255, 255, 255, 0.5), -5px 5px 5px 1px rgba(255, 255, 255, 0.5);
+}
+
+.msjForm {
+    font-size: 1rem;
+    margin-top: 30px;
+    letter-spacing: 0.5px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.linkForm {
+    font-size: 1rem;
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+.msjSoporte {
+    width: 260px;
+    height: 20px;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    background: none;
+    margin-top: 40px;
+    resize: vertical;
+    min-height: 20px;
+    max-height: 100px;
+    color: whitesmoke;
+}
+
+.submit:hover {
+    transform: scale(1.1);
+    border: 2px solid whitesmoke;
+    background-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 2px 2px 5px 0px whitesmoke, -2px -2px 5px 0px whitesmoke, 2px -2px 5px 0px whitesmoke, -2px 2px 5px 0px whitesmoke;
+}
+
+.inp:hover {
+    color: whitesmoke;
+}
+
+/* COMPRA PRODUCTO.HTML */
+.hrFooterCompraProducto {
+    box-shadow: 3px 3px 5px 1px whitesmoke, -3px -3px 5px 1px whitesmoke, 3px -3px 5px 1px whitesmoke, -3px 3px 5px 1px whitesmoke;
+    background-color: whitesmoke;
+    color: whitesmoke;
+    margin-bottom: 0px;
+    margin-top: 100px;
+    margin-right: 15%;
+    margin-left: 15%;
+}
+
+.logoWppCompraProducto {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 75px;
+    height: 75px;
+}
+  
+.imgPrincipal {
+    grid-area: imgPrincipal;
+}
+  
+.imgSecundariaUno {
+    grid-area: imgSecundariaUno;
+}
+  
+.imgSecundariaDos {
+    grid-area: imgSecundariaDos;
+}
+  
+.imgSecundariaTres {
+    grid-area: imgSecundariaTres;
+}
+  
+.imgSecundariaCuatro {
+    grid-area: imgSecundariaCuatro;
+}
+  
+.productoNombre {
+    grid-area: nombreProducto;
+}
+  
+.productoPrecio {
+    grid-area: precioProducto;
+}
+  
+.comprarBtn {
+    grid-area: botonComprar;
+}
+  
+.caracteristicasProducto {
+    grid-area: caracteristicasProducto;
+}
+  
+.mainContainer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 640px;
+    padding-top: 100px;
+    color: whitesmoke;
+    background-color: black;
+}
+  
+.gridContainer {
+    display: grid;
+    grid-template-columns: 100px 400px 300px;
+    grid-template-rows: 60px 60px repeat(3, 120px);
+    grid-template-areas: "imgSecundariaUno imgPrincipal nombreProducto" "imgSecundariaUno imgPrincipal precioProducto" "imgSecundariaDos imgPrincipal caracteristicasProducto" "imgSecundariaTres imgPrincipal caracteristicasProducto" "imgSecundariaCuatro imgPrincipal botonComprar";
+    padding: 40px 20px;
+    column-gap: 40px;
+    border-radius: 8px;
+    background-color: #1F1F1F;
+}
+  
+.imgPrincipal {
+    width: 400px;
+    height: 460px;
+    border-radius: 8px;
+    background-color: whitesmoke;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    transition: color 0.5s ease-in-out, transform 0.5s ease-in-out;
+    box-shadow: 5px 5px 5px 1px rgba(255, 255, 255, 0.5), -5px -5px 5px 1px rgba(255, 255, 255, 0.5), 5px -5px 5px 1px rgba(255, 255, 255, 0.5), -5px 5px 5px 1px rgba(255, 255, 255, 0.5);
+}
+
+.imgPrincipal:hover {
+    transform: scale(1.1);
+    border: 2px solid whitesmoke;
+    background-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 2px 2px 5px 0px whitesmoke, -2px -2px 5px 0px whitesmoke, 2px -2px 5px 0px whitesmoke, -2px 2px 5px 0px whitesmoke;
+}
+  
+.imgSecundaria {
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+    border-radius: 8px;
+    background-color: whitesmoke;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    transition: color 0.5s ease-in-out, transform 0.5s ease-in-out;
+    box-shadow: 5px 5px 5px 1px rgba(255, 255, 255, 0.5), -5px -5px 5px 1px rgba(255, 255, 255, 0.5), 5px -5px 5px 1px rgba(255, 255, 255, 0.5), -5px 5px 5px 1px rgba(255, 255, 255, 0.5);
+}
+
+.imgSecundaria:hover {
+    transform: scale(1.1);
+    border: 2px solid whitesmoke;
+    background-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 2px 2px 5px 0px whitesmoke, -2px -2px 5px 0px whitesmoke, 2px -2px 5px 0px whitesmoke, -2px 2px 5px 0px whitesmoke;
+}
+  
+.productoNombre {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+}
+  
+.productoPrecio {
+    font-size: 1.5rem;
+}
+  
+.caracteristica {
+    text-transform: uppercase;
+    font-size: 1rem;
+}
+  
+.containerComprarBtn {
+    border: none;
+    display: flex;
+    justify-content: flex-start;
+    background-color: #1F1F1F;
+}
+  
+.comprarBtn {
+    width: 290px;
+    cursor: pointer;
+    margin-top: 50px;
+    color: #1F1F1F;
+    font-weight: bold;
+    padding: 10px 0px;
+    border-radius: 8px;
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: whitesmoke;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    transition: color 0.5s ease-in-out, transform 0.5s ease-in-out;
+    box-shadow: 5px 5px 5px 1px rgba(255, 255, 255, 0.5), -5px -5px 5px 1px rgba(255, 255, 255, 0.5), 5px -5px 5px 1px rgba(255, 255, 255, 0.5), -5px 5px 5px 1px rgba(255, 255, 255, 0.5);
+}
+
+.comprarBtn:hover {
+    transform: scale(1.1);
+    border: 2px solid whitesmoke;
+    background-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 2px 2px 5px 0px whitesmoke, -2px -2px 5px 0px whitesmoke, 2px -2px 5px 0px whitesmoke, -2px 2px 5px 0px whitesmoke;
+}
+
+/* DARK MODE */
+.btnMode {
+    background-color: black;
+    color: whitesmoke;
+    font-size: 60px;
+    border: none;
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+}
+
+/* LIGHT MODE */
+.btnModeLightMode {
+    background-color: #e5e5e5;
+    color: black;
+}
+
+/* LIGHT MODE | HR'S */
+.hrMainLightMode {
+    box-shadow: 3px 3px 5px 1px #666, -3px -3px 5px 1px #666, 3px -3px 5px 1px #666, -3px 3px 5px 1px #666;
+    background-color: #666;
+    color: #666;
+}
+
+.hrFooterLightMode {
+    box-shadow: 3px 3px 5px 1px #666, -3px -3px 5px 1px #666, 3px -3px 5px 1px #666, -3px 3px 5px 1px #666;
+    background-color: #666;
+    color: #666;
+}
+/* LIGHT MODE | HEADER */
+.imgLogoLightMode {
+    background-color: #e5e5e5;
+}
+
+.headerContainerLightMode {
+    box-shadow: 3px 3px 5px 0px #222222;
+    background-color: #e5e5e5;
+    color: black;
+}
+
+.barraNavLightMode {
+    background-color: #e5e5e5;
+    color: black;
+}
+
+.itemNavLightMode {
+    color: black;
+}
+
+.navegacionLightMode {
+    border-right: 1px solid #222222;
+    border-left: 1px solid #222222;
+    background-color: #e5e5e5;
+    color: black;
+}
+
+.listaHeaderLightMode:first-child {
+    border-left: 1px solid #222222;
+}
+
+.listaHeaderLightMode:last-child {
+    border-right: 1px solid #222222;
+}
+
+.searchBarLightMode {
+    background-color: #222222;
+    color: whitesmoke;
+}
+
+.btnSearchBarLightMode {
+    background-color: #222222;
+    color: whitesmoke;
+}
+
+.searchToolLightMode {
+    background-color: #222222;
+    color: whitesmoke;
+}
+
+.itemNavLightMode:visited {
+    color: black;
+}
+
+.itemNavLightMode:focus {
+    color: black;
+}
+
+.itemNavLightMode:hover {
+    color: #666;
+}
+
+.navegacionLightMode:hover {
+    border-right: 2px solid #666;
+    border-left: 2px solid #666;
+}
+
+.searchToolLightMode::placeholder {
+    color: whitesmoke;
+}
+
+.searchBarLightMode:hover {
+    box-shadow: 
+    3px 3px 10px rgba(0, 0, 0, 0.1),
+    3px -3px 10px rgba(0, 0, 0, 0.1), 
+    -3px -3px 10px rgba(0, 0, 0, 0.1), 
+    -3px 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.searchToolLightMode:focus {
+    background-color: #222222;
+    color: #222222;
+}
+
+.btnSearchBarLightMode:hover {
+    color: whitesmoke;
+}
+
+/* LIGHT MODE | FOOTER */
+.footerLightMode {
+    background-color: #e5e5e5;
+}
+
+.divListaFooterLightMode {
+    background-color: #e5e5e5;
+}
+
+.linkFooterLightMode {
+    border-right: 1px solid #333;
+    border-left: 1px solid #333;
+    background-color: #e5e5e5;
+    color: black;
+}
+
+.divListaFooterLightMode:first-child {
+    border-left: 1px solid #333;
+}
+
+.divListaFooterLightMode:last-child {
+    border-right: 1px solid #333;
+}
+
+.linkFooterLightMode:hover {
+    border-right: 2px solid #666;
+    border-left: 2px solid #666;
+    color: #666;
+}
+
+/* LIGHT MODE | INDEX.HTML */
+.mainLightMode {
+    background-color: #e5e5e5;
+}
+
+.productosLightMode {
+    background-color: #e5e5e5;
+}
+
+.productoLightMode {
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1),3px -3px 10px rgba(0, 0, 0, 0.1), -3px -3px 10px rgba(0, 0, 0, 0.1), -3px 3px 10px rgba(0, 0, 0, 0.1);
+    background-color: #eaeaea;
+    border: 3px solid #ccc;
+}
+
+.nombreProductoLightMode {
+    color: black;
+}
+
+.precioProductoLightMode {
+    color: black;
+}
+
+.btnCarritoLightMode {
+    background-color: #ccc;
+    color: black;
+}
+
+.btnComprarLightMode {
+    background-color: #ccc;
+    color: black;
+}
+
+.btnLinkLightMode {
+    color: black;
+}
+
+.productoLightMode:hover {
+    box-shadow: 3px 3px 10px #b3b3b3,3px -3px 10px #b3b3b3, -3px -3px 10px #b3b3b3, -3px 3px 10px #b3b3b3;
+}
+
+.btnCarritoLightMode:hover {
+    box-shadow: 3px 3px 10px #b3b3b3,3px -3px 10px #b3b3b3, -3px -3px 10px #b3b3b3, -3px 3px 10px #b3b3b3;
+}
+
+.btnComprarLightMode:hover {
+    box-shadow: 3px 3px 10px #b3b3b3,3px -3px 10px #b3b3b3, -3px -3px 10px #b3b3b3, -3px 3px 10px #b3b3b3;
+}
+
+.nombreProductoLightMode:hover {
+    color: #b3b3b3;
+}
+
+.precioProductoLightMode:hover {
+    color: #b3b3b3;
+}
+
+.logoCarritoLightMode {
+    background-color: #e5e5e5;
+    color: black;
+}
+
+.carritoActivoLightMode {
+    background-color: #eaeaea;
+    font-size: 25px;
+}
+
+.sideBarLightMode {
+    box-shadow: -3px 3px 5px #222222;
+    background-color: #eaeaea;
+}
+
+.precioTotalCarritoLightMode {
+    color: black;
+}
+
+.precioCarritoLightMode {
+    color: black;
+    box-shadow: 3px 3px 5px 0px #222222, -3px -3px 5px 0px #222222, 3px -3px 5px 0px #222222, -3px 3px 5px 0px #222222;
+}
+
+.carritoContainerLightMode {
+    box-shadow: -3px 3px 5px #222222, 3px -3px 5px #222222;
+}
+
+.nombreProductoCarritoLightMode {
+    color: black;
+}
+
+.btnSumarLightMode {
+    background-color: #eaeaea;
+    color: black;
+}
+
+.cantidadProductoCarritoLightMode {
+    color: black;
+}
+
+.btnRestarLightMode {
+    background-color: #eaeaea;
+    color: black;
+}
+
+.btnEliminarLightMode {
+    background-color: #eaeaea;
+    color: black;
+}
+
+.carritoContainerLightMode:hover,
+.carritoContainerLightMode:hover .btnSumarLightMode,
+.carritoContainerLightMode:hover .btnRestarLightMode,
+.carritoContainerLightMode:hover .btnEliminarLightMode {
+    background-color: #CCCCCC;
+}
+
+/* LIGHT MODE | LOG-IN.HTML */
+.containerPadreLightMode {
+    background-color: #e5e5e5;
+}
+
+.containerLightMode {
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1),3px -3px 10px rgba(0, 0, 0, 0.1), -3px -3px 10px rgba(0, 0, 0, 0.1), -3px 3px 10px rgba(0, 0, 0, 0.1);
+    background-color: #eaeaea;
+    border: 3px solid #ccc;
+}
+
+.h2FormLightMode {
+    color: black;
+}
+
+.inpLightMode {
+    color: #ccc;
+    border-bottom: 2px solid #ccc;
+}
+
+.inputLightMode {
+    color: black;
+}
+
+.submitLightMode {
+    border: 2px solid #ccc;
+    background-color: #ccc;
+    color: black;
+}
+
+.inpLightMode:hover {
+    color: black;
+}
+
+.submitLightMode:hover {
+    border: 2px solid #ccc;
+    background-color: #ccc;
+    box-shadow: 2px 2px 5px 0px #666, -2px -2px 5px 0px #666, 2px -2px 5px 0px #666, -2px 2px 5px 0px #666;
+}
+
+/* LIGHT MODE | COMPRA-PRODUCTO.HTML */
+.hrFooterCompraProductoLightMode {
+    box-shadow: 3px 3px 5px 1px #666, -3px -3px 5px 1px #666, 3px -3px 5px 1px #666, -3px 3px 5px 1px #666;
+    background-color: #666;
+    color: #666;
+}
+
+.mainCompraProductoLightMode {
+    background-color: #e5e5e5;
+}
+
+.mainContainerLightMode {
+    color: black;
+    background-color: #e5e5e5;
+}
+
+.gridContainerLightMode {
+    background-color: #eaeaea;
+    box-shadow: 2px 2px 5px 0px #b3b3b3, -2px -2px 5px 0px #b3b3b3, 2px -2px 5px 0px #b3b3b3, -2px 2px 5px 0px #b3b3b3;
+}
+
+.imgPrincipalLightMode {
+    border: 2px solid #B8B8B8;
+    background-color: #CCCCCC;
+    box-shadow: 5px 5px 5px 1px #B8B8B8, -5px -5px 5px 1px #B8B8B8, 5px -5px 5px 1px #B8B8B8, -5px 5px 5px 1px #B8B8B8;
+}
+
+.imgPrincipalLightMode:hover {
+    border: 2px solid #CCCCCC;
+    background-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 2px 2px 5px 0px #CCCCCC, -2px -2px 5px 0px #CCCCCC, 2px -2px 5px 0px #CCCCCC, -2px 2px 5px 0px #CCCCCC;
+}
+
+.imgSecundariaLightMode {
+    border: 2px solid #B8B8B8;
+    background-color: #CCCCCC;
+    box-shadow: 5px 5px 5px 1px #B8B8B8, -5px -5px 5px 1px #B8B8B8, 5px -5px 5px 1px #B8B8B8, -5px 5px 5px 1px #B8B8B8;
+}
+
+.imgSecundariaLightMode:hover {
+    border: 2px solid #CCCCCC;
+    background-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 2px 2px 5px 0px #CCCCCC, -2px -2px 5px 0px #CCCCCC, 2px -2px 5px 0px #CCCCCC, -2px 2px 5px 0px #CCCCCC;
+}
+
+.containerComprarBtnLightMode {
+    background-color: #eaeaea;
+}
+
+.comprarBtnLightMode {
+    color: black;
+    border: 2px solid #B8B8B8;
+    background-color: #CCCCCC;
+    box-shadow: 5px 5px 5px 1px #B8B8B8, -5px -5px 5px 1px #B8B8B8, 5px -5px 5px 1px #B8B8B8, -5px 5px 5px 1px #B8B8B8;
+}
+
+.comprarBtnLightMode:hover {
+    border: 2px solid #CCCCCC;
+    background-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 2px 2px 5px 0px #CCCCCC, -2px -2px 5px 0px #CCCCCC, 2px -2px 5px 0px #CCCCCC, -2px 2px 5px 0px #CCCCCC;
+}
